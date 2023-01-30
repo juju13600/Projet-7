@@ -8,7 +8,9 @@ import HomePage from "./views/HomePage/HomePage";
 import AboutPage from "./views/AboutPage/AboutPage";
 import ProductPage from "./views/ProductPage/ProductPage";
 import Error404Page from "./views/Error404Page/Error404Page";
-
+// components
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
@@ -16,6 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
         <Route path="products/:id" element={<ProductPage />}></Route>
@@ -23,6 +26,7 @@ root.render(
         <Route path="*" element={<Error404Page />}></Route>
         <Route path="/404" element={<Error404Page />}></Route>
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
