@@ -1,13 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './components/App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./index.css";
+// pages
+import HomePage from "./views/HomePage/HomePage";
+import AboutPage from "./views/AboutPage/AboutPage";
+import ProductPage from "./views/ProductPage/ProductPage";
+import Error404Page from "./views/Error404Page/Error404Page";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<HomePage />}></Route>
+        <Route path="products/:id" element={<ProductPage />}></Route>
+        <Route path="/about" element={<AboutPage />}></Route>
+        <Route path="*" element={<Error404Page />}></Route>
+        <Route path="/404" element={<Error404Page />}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
