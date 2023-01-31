@@ -1,0 +1,85 @@
+.collapse {
+    border-radius: 5px;
+    margin-top: 31px;
+    text-align: left;
+  }
+  
+  .header-collapse {
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 5px;
+    display: inline-flex;
+    height: 25%;
+    min-height: 50px;
+    width: 100%;
+  }
+  
+  .titre-collapse {
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+  }
+  
+  .fleche-collapse {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 100%;
+  }
+  .fleche-collapse:hover {
+    cursor: pointer;
+  }
+  
+  .fleche-collapse.true {
+    justify-content: start;
+    transform: rotate(-180deg);
+  }
+  
+  .description-collapse {
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    color: #ff6060;
+    /* height: 75%; */
+    height: auto;
+    margin-top: -10px;
+    /* décaler le bloc de texte en dessous du titre */
+    /* min-height: 100px; */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 43px 12px 10px 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .description-collapse {
+      padding: 23.02px 6.91px 10px 11.51px;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .header-collapse {
+      height: 29.93px;
+    }
+    .titre-collapse {
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+    }
+    .fleche-collapse > img {
+      margin-right: 0px;
+      width: 8.96px;
+    }
+    .collapse {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  

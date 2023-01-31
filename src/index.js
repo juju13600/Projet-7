@@ -13,6 +13,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // data for about page
+import about from "../src/data/about.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,7 +23,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
         <Route path="products/:id" element={<ProductPage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
+        <Route path="/about" element={<AboutPage data={about} />}></Route>
         <Route path="*" element={<Error404Page />}></Route>
         <Route path="/404" element={<Error404Page />}></Route>
       </Routes>

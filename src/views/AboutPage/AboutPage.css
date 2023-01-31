@@ -1,0 +1,29 @@
+.aboutpage-title {
+    color: black;
+    font-size: 2em;
+    font-family: Montserrat;
+  }
+  
+  .about-page {
+    margin-top: 49.37px;
+    margin-bottom: 5rem;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .container_dropdown {
+    margin-left: 108px;
+    margin-right: 109px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-page {
+      margin: 17px 20px 29px 20px;
+    }
+    .container_dropdown {
+      margin-top: 19px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
