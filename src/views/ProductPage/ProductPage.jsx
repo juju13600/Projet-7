@@ -1,5 +1,8 @@
 import { Navigate, useParams } from "react-router-dom";
+// components
+import Collapse from "../../components/Collapse/Collapse";
 import Products from "../../data/records.json";
+import Caroussel from "../../components/Caroussel/Caroussel";
 import { Star } from "../../components/Star/Star";
 import Tags from "../../components/Tags/Tags";
 import Contact from "../../components/Contact/Contact";
@@ -31,5 +34,40 @@ function ProductPage() {
   const equipementsLogement = equipments.map((equipment, index) => {
     return <li key={index}>{equipment}</li>;
   });
+
+return (
+    <>
+      <div className="product_page">
+        <Caroussel pictures={pictures} />
+        <div className="product_content">
+          <div className="product_informations">
+            <h1 className="product_title">{title}</h1>
+            <p className="product_location">{location}</p>
+            <div className="product_tags">
+              {tags.map((tag, index) => (
+                <Tags key={index} getTag={tag} />
+              ))}
+            </div>
+          </div>
+          <div className="product_starshost">
+            <Contact host={host} />
+            <div className="product_stars">{stars}</div>
+          </div>
+        </div>
+        <div className="description-equipements">
+          <Collapse
+            className="description"
+            titre="Description"
+            description={description}
+          />
+          <Collapse
+            className="equipment"
+            titre="Équipements"
+            description={equipementsLogement}
+          />
+        </div>
+      </div>
+    </>
+  );
 }
 export default ProductPage;

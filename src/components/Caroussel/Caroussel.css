@@ -1,0 +1,68 @@
+.carouselle_image > img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 25px;
+  /* mix-blend-mode: normal; */
+}
+/* message when no image exist */
+.carouselle_displayNoImage {
+  width: 100%;
+  height: 25rem;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: montserrat;
+  margin-bottom: 30px;
+}
+
+.carouselle_image {
+  position: relative;
+}
+/* counter */
+.carouselle_count {
+  font-size: 18px;
+  font-family: montserrat;
+  font-weight: 500;
+  color: #ffffff;
+  bottom: 19px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+/* arrows */
+.carouselle_arrowLeft {
+  position: absolute;
+  left: 13px;
+  top: 44%;
+  cursor: pointer;
+}
+.carouselle_arrowRight {
+  position: absolute;
+  right: 13px;
+  top: 44%;
+  cursor: pointer;
+}
+.carouselle_arrowLeft img,
+.carouselle_arrowRight img {
+  width: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .carouselle_arrowLeft img,
+  .carouselle_arrowRight img {
+    width: 11.67px;
+  }
+
+  .carouselle_image > img {
+    height: 255px;
+    border-radius: 10px;
+  }
+}
+
+/*  */

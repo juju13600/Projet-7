@@ -1,0 +1,134 @@
+.grey {
+    color: #999;
+    font-size: 30px;
+  }
+  
+  .red {
+    color: #ff6060;
+    font-size: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    .red {
+      font-size: 15px;
+    }
+    .grey {
+      font-size: 15px;
+    }
+  }
+  
+  .product_page {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .description-equipements {
+    gap: 0 75px;
+    display: inline-flex;
+    line-height: 22.5px;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .description-equipements > .dropdown {
+    width: 50%;
+  }
+  
+  .product_content {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product_tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product_starshost {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .product_stars {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .product_informations {
+    display: flex;
+    flex-direction: column;
+  }
+  .product_title {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .product_location {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  ol {
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .product_page {
+      margin-top: 2rem;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .product_title {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .product_location {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+    }
+    .product_content {
+      flex-direction: column;
+    }
+    .product_tags {
+      margin-top: 1rem;
+    }
+    .description-equipements {
+      flex-direction: column;
+    }
+    .description-equipements > .dropdown {
+      width: 100%;
+    }
+  
+    .product_informations {
+      width: 100%;
+    }
+    .product_starshost {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
