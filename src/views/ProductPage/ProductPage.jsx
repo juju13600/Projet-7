@@ -1,5 +1,8 @@
 import { Navigate, useParams } from "react-router-dom";
-
+import Products from "../../data/records.json";
+import { Star } from "../../components/Star/Star";
+import Tags from "../../components/Tags/Tags";
+import Contact from "../../components/Contact/Contact";
 // css
 import "./ProductPage.css";
 
@@ -29,3 +32,4 @@ function ProductPage() {
     return <li key={index}>{equipment}</li>;
   });
 }
+export default ProductPage;
