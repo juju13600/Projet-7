@@ -5,7 +5,7 @@
   border-radius: 25px;
   /* mix-blend-mode: normal; */
 }
-/* message when no image exist */
+
 .carouselle_displayNoImage {
   width: 100%;
   height: 25rem;
@@ -24,7 +24,7 @@
 .carouselle_image {
   position: relative;
 }
-/* counter */
+
 .carouselle_count {
   font-size: 18px;
   font-family: montserrat;
@@ -65,4 +65,3 @@
   }
 }
 
-/*  */

@@ -2,7 +2,6 @@
     background-color: #f7f7f7;
     border-radius: 25px;
     padding: 50px 56px 50px 56px;
-    /* haut droite bas gauche */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;

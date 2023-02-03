@@ -12,7 +12,7 @@ import Error404Page from "./views/Error404Page/Error404Page";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// data for about page
+// data pour about page
 import about from "../src/data/about.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
